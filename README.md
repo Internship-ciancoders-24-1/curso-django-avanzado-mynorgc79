@@ -11,3 +11,6 @@ ir a la carpeta cride
 `docker-compose -f .\local.yml build`
 2. levantar el servidor y servicios 
 `docker-compose -f .\local.yml up`
+
+
+firs commit
