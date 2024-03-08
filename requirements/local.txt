@@ -1,3 +1,4 @@
+#gereda del archivo base.
 -r ./base.txt
 
 # Debugging
