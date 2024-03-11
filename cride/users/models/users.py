@@ -19,7 +19,9 @@ class User(CRideModels, AbstractUser):
     email = models.EmailField(
         'email address',
         unique=True,
-        error_messages={'unique': 'A user with that email already exists.'}
+        error_messages={
+            'unique': 'A user with that email already exists.'
+            }
     )
 
     phone_regex = RegexValidator(
