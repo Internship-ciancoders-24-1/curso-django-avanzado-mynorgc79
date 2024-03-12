@@ -21,16 +21,16 @@ class InvitationsManagerTestCase(TestCase):
     def setUp(self):
         """Test case setup."""
         self.user = User.objects.create(
-            first_name='Franklin',
-            last_name='Garcia',
-            email='fm-garcia@outlook.com',
-            username='fmgarcia',
+            first_name='Mynor',
+            last_name='Guarchaj',
+            email='mguarchaj@gmail.com',
+            username='mguarchaj',
             password='admin123'
         )
         self.circle = Circle.objects.create(
-            name='Computer Science Faculty',
-            slug_name='csfaculty',
-            about="Official UPC's Computer Science Faculty",
+            name='Systems engineering Faculty',
+            slug_name='sefaculty',
+            about="system engineering  Faculty",
             verified=True
         )
 
