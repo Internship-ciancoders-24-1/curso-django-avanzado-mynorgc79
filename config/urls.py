@@ -16,3 +16,4 @@ urlpatterns = [
     path('', include(('cride.rides.urls', 'rides'), namespace='rides')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ 
