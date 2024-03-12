@@ -46,6 +46,7 @@ def gen_verification_token(user):
     return token
 
 
+
 @periodic_task(name='disable_finished_rides', run_every=timedelta(days=3))
 def disable_finished_rides():
     """Disable finished rides."""
