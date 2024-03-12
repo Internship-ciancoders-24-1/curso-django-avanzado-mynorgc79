@@ -34,6 +34,7 @@ class CircleAdmin(admin.ModelAdmin):
         'is_limited'
     )
 
+
     actions = ['make_verified', 'make_unverified', 'download_todays_rides']
 
     def make_verified(self, request, queryset):
@@ -41,10 +42,12 @@ class CircleAdmin(admin.ModelAdmin):
         queryset.update(verified=True)
     make_verified.short_description = 'Make selected circles verified'
 
+
     def make_unverified(self, request, queryset):
         """Make circles unverified."""
         queryset.update(verified=False)
     make_unverified.short_description = 'Make selected circles unverified'
+
 
     def download_todays_rides(self, request, queryset):
         """Return today's rides."""
